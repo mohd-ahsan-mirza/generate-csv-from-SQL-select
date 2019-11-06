@@ -11,5 +11,6 @@ if [[ ! $ENDDATE =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then
 	echo "Invalid END date"
 	exit
 fi
+# Example SELECT query. Change it to suit your needs
 mysql -h {HOST NAME OR IP} -u {USER} -p{PASS} --database {DATABASE NAME} -e "SELECT * FROM transactions WHERE transaction_date > '$STARTDATE'  AND transaction_date < '$ENDDATE' ORDER BY transaction_date\G;" > output.txt
 python3 process_raw_data.py output.txt
