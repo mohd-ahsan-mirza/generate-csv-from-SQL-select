@@ -1,5 +1,6 @@
 #!/bin/bash
 echo "Make sure start date is not greater than the end date otherwise the output will be empty"
+# Example parameters. Update according to your needs
 echo "DATE FORMAT (YYYY-mm-dd)"
 read -p "Enter Start Date: " STARTDATE
 if [[ ! $STARTDATE =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then
