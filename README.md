@@ -1,5 +1,8 @@
 # Description
 You can use this application to generate a CSV file from any `SELECT` Query. A file called `result.csv` will get generated
+# Prerequisites
+* Python => 3
+* MySQL => 5.6
 # Setup
 * Clone the Repo
 * `chmod +x generate.sh `
