@@ -1,5 +1,5 @@
 # Description
-You can use this application to generate a CSV file from any `SELECT` Query.
+You can use this application to generate a CSV file from any `SELECT` Query. A file called `result.csv` will get generated
 # Setup
 * Clone the Repo
 * `chmod +x generate.sh `
